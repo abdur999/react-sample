@@ -12,7 +12,15 @@ const tasks = ["Take out the trash","Shovel out the trash","Grape Vine"]
 // )
 // ReactDOM.render(element, document.getElementById('root'))
 
+//Pass item only
 
+// const element = React.createElement('ol', null, 
+//   tasks.map((task,index) => React.createElement('li',null, task) )
+// )
+// ReactDOM.render(element, document.getElementById('root'))
+
+
+//Pass item with property
 const element = React.createElement('ol', null, 
   tasks.map((task,index) => React.createElement("li",{ key: index }, task))
 )
